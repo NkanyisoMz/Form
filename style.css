@@ -1,0 +1,188 @@
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            background-color: white;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 900px;
+            height: 600px;
+        }
+        .left-side {
+            background: url('background.jpg') no-repeat center center/cover;
+            flex: 0 0 35%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-betweens;
+            overflow: hidden;
+        }
+        .left-side img {
+            margin-right: 10px;
+    width: 50px; /* Set a reasonable width for the logo */
+    height: auto;
+        }
+        .odin{
+            font-size: 3rem;
+    
+        }
+        .logo {
+            display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(9, 41, 41, 0.8); /* Background color with opacity */
+    padding: 10px;
+    height: auto;
+        
+        }
+        .image-credit {
+            position: absolute;
+            padding-left: 100px;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+    overflow: hidden;
+        }
+
+        .image-credit a{
+            color: white;
+        }
+        .right-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #faf8f4;
+        }
+        
+        form h1 {
+            flex: 1 1 100%; /* Make the heading span the full width */
+    font-size: 20px; /* Adjust the font size */
+    margin-bottom: 8px; /* Add some space below the heading */
+    color: #333;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #000000;
+            padding-left: 30px;
+            font-weight: bold;
+        }
+        
+        form h1{
+            padding-left: 15px;
+            }
+        .middle{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            gap: 5px; /* Adds spacing between the form fields */
+            justify-content: space-between; /* Distributes space between form fields */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            padding-left: 20px;
+        
+
+        }
+        
+        .form-group {
+            flex: 1 1 calc(50% - 20px); /* Each form group will take 50% of the width minus the gap */
+            /*min-width: 250px; /* Ensures a minimum width for smaller screens */
+            box-sizing: border-box; /* Ensures padding and border are included in width calculation */
+            padding-left: 15px;
+
+        }
+        
+        label {
+            font-size: 12px; /* Slightly larger for better readability */
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 80%; /* Ensure input takes full width of the form group */
+            font-size: 10px;
+        }
+
+        /* Make the layout responsive on smaller screens */
+@media (max-width: 768px) {
+    .form-group {
+        flex: 1 1 100%; /* On smaller screens, each form group takes full width */
+    }
+    .error, .button {
+        flex: 1 1 100%; /* Ensure error and button also take full width on small screens */
+    }
+}
+        
+        input::placeholder {
+            color: #aaa;
+        }
+        
+        .error {
+            flex: 1 1 100%; /* Make sure the error message spans the full width */
+            color: red;
+            font-size: 12px;
+            margin-top: 1px; /* Adjust the position to make it appear right under the password input */
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        
+        .button {
+            flex: 1 1 100%; /* Ensure the button spans the full width at the end of the form */
+            padding: 10px 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+            background-color: #1c631e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .button:hover {
+            background-color: #4a5e37;
+        }
+        
+        .login-link {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+            padding-left: 30px;
+        }
+        
+        .login-link a {
+            color: #1c631e !important;
+            text-decoration: none !important;
+            font-weight: 700;
+            
+            
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        #password, #confirm-password {
+            border-color: red;
+        }
